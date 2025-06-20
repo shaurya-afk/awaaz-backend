@@ -1,0 +1,21 @@
+# Ignore Maven build output
+/target
+
+# Ignore Dockerfile and docker-compose override files
+Dockerfile
+docker-compose*.yml
+
+# Ignore local configuration
+*.env
+*.local
+
+# Ignore OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+
+# Ignore sensitive files
+serviceAccountKey.json
+

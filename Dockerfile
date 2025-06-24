@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:21-jdk
 LABEL authors="shaur"
 
 ARG JAR_FILE=target/Whistleblower-0.0.1-SNAPSHOT.jar

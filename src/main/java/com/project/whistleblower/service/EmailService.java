@@ -23,18 +23,30 @@ public class EmailService {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
             helper.setFrom("projectx0990@gmail.com");
-            helper.setTo("shauryakumarsharma0007@gmail.com"); // Replace with actual address
+            helper.setTo(new String[]{
+                    "presidentofindia@rb.nic.in",
+                    "connect@mygov.nic.in",
+                    "complaints@cvc.gov.in",
+                    "jscpg-mha@nic.in",
+                    "darpg-arpg@nic.in"
+            });
             helper.setSubject("New Anonymous Corruption Complaint Submitted");
 
             helper.setText(
-                    "Respected Authority,\n\n" +
-                            "An anonymous complaint regarding alleged corrupt practices by a law enforcement official has been submitted through our public grievance platform.\n\n" +
-                            "Please find the attached PDF document summarizing the complaint, including the date/time of submission, a detailed description of the incident, and links to supporting evidence (e.g., images, audio recordings, documents).\n\n" +
-                            "We request that you kindly acknowledge this report and take appropriate action in accordance with relevant laws and departmental protocols.\n\n" +
-                            "This complaint was submitted anonymously to protect the safety and identity of the whistleblower.\n\n" +
-                            "Sincerely,\n" +
-                            "Whistleblower Platform (Automated Service)\n" +
-                            "Do not reply to this email."
+                    """
+                            Respected Authority,
+                            
+                            An anonymous complaint regarding alleged corrupt practices by a law enforcement official has been submitted through our public grievance platform.
+                            
+                            Please find the attached PDF document summarizing the complaint, including the date/time of submission, a detailed description of the incident, and links to supporting evidence (e.g., images, audio recordings, documents).
+                            
+                            We request that you kindly acknowledge this report and take appropriate action in accordance with relevant laws and departmental protocols.
+                            
+                            This complaint was submitted anonymously to protect the safety and identity of the whistleblower.
+                            
+                            Sincerely,
+                            Whistleblower Platform (Automated Service)
+                            Do not reply to this email."""
             );
 
             FileSystemResource file = new FileSystemResource(pdfFile);

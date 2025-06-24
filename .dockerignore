@@ -1,5 +1,6 @@
-# Ignore Maven build output
-/target
+# Ignore everything in target except the built JAR
+/target/*
+!/target/Whistleblower-0.0.1-SNAPSHOT.jar
 
 # Ignore Dockerfile and docker-compose override files
 Dockerfile
@@ -18,4 +19,3 @@ Thumbs.db
 
 # Ignore sensitive files
 serviceAccountKey.json
-

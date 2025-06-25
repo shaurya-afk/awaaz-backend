@@ -28,7 +28,8 @@ public class EmailService {
                     "connect@mygov.nic.in",
                     "complaints@cvc.gov.in",
                     "jscpg-mha@nic.in",
-                    "darpg-arpg@nic.in"
+                    "darpg-arpg@nic.in",
+                    "comment.ed0909@gmail.com"
             });
             helper.setSubject("New Anonymous Corruption Complaint Submitted");
 

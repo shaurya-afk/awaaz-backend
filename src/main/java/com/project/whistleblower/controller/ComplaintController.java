@@ -4,6 +4,7 @@ import com.project.whistleblower.model.Complaint;
 import com.project.whistleblower.service.ComplaintPdfService;
 import com.project.whistleblower.service.EmailService;
 import com.project.whistleblower.service.FirebaseStorageService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -42,5 +43,10 @@ public class ComplaintController{
         emailService.sendComplaintToAuthority(pdf);
 
         return ResponseEntity.ok("Complaint submitted with files: " + uploadedUrls);
+    }
+
+    @GetMapping("/check")
+    public ResponseEntity<String> checkComplaint(){
+        return ResponseEntity.ok("Complaint service is running");
     }
 }

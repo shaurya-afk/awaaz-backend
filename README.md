@@ -1,6 +1,6 @@
-# Whistleblower App Backend
+# Awaaz App Backend
 
-This project is a Spring Boot-based backend for the Whistleblower App, designed to securely collect, store, and process complaints from users. It provides RESTful APIs for submitting complaints with file attachments and includes a health check endpoint. The backend is production-ready and can be accessed via the provided base URL without any local configuration.
+This project is a Spring Boot-based backend for the Awaaz App, designed to securely process complaints from users and sends to the respective authorities. It provides RESTful APIs for submitting complaints with file attachments and includes a health check endpoint. The backend is production-ready and can be accessed via the provided base URL without any local configuration.
 
 ## Base URL
 
